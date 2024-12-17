@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;0,600;1,500;1,700&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Kanit:ital,wght@0,500;0,700;1,500&family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.menu{
+    position: fixed;
+    list-style: none;
+    top: 1px;
+    left: 3%;
+    margin: auto;
+    max-width: 100%;
+    height: 1px;
+    object-fit: cover;
+    z-index: 1;
+    padding: 0;
+}
+.menu li a {
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 140px;
+    display: block;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
+}
+.menu li{ 
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background-color: rgba(225, 234, 238, 0.1);
+}
+/* SECCION I N I C I O */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.bd{
+    width: 100%;
+    display: inline;
+}
+.bd .efecto{
+    margin-right: 100px;
+    display: inline;
+    margin-top: 100px;
+    display: block;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+.bd .efecto p{
+    font-size: 30px;
+    position: relative;
+    float: right;
+    z-index: 10;
+    display: inline;
+    color:#ff0000;
+    text-shadow: 0 0 100px #ff0000, 0 0 50px #ff0000, 0 0 50px #ff0000;
+}
+.fli1 {
+    animation: parpadear 1s infinite 0s backwards steps(2);
+}
+.fli2 {
+    animation: parpadear 3s infinite 2s backwards steps(2);
+}
+.fli3 {
+    animation: parpadear 3s infinite 2s backwards steps(3);
+}
+@keyframes parpadear {
+    to {
+        color: #4e4e4e;
+        text-shadow: none;
+    }
+}
+.inicio{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    z-index: 1;
+  }
+.inicio .contenido-banner{
+    position: absolute;
+    padding: 0px;
+    background-color: rgba(225, 234, 238, 0.1);
+    max-width: 600px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 40px;
+    height: 400px;
+}
+.inicio .contenido-banner .contenedor-img {
+    margin-top: 20px; /* Cambia el valor según tu preferencia */
+}
+.inicio .contenido-banner .contenedor-img img{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #4e4e4e;
+    display: block;
+    width: 200px; /* Cambia el valor de width según tus necesidades */
+    height: 200px; /* Cambia el valor de height según tus necesidades */
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000; 
+}
+.inicio .contenido-banner h2{
+    font-size: 19px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000,  0 0 5px #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 25px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: rgba(225, 234, 238, 0.329);
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1CB698;
+    border-radius: 4px;
+    transition: transform 0.1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:hover {
+    background-color: #FF0000; /* Cambia el color a tu preferencia */
+  }
+  
+.grid-item:hover{
+  filter: opacity(5.9);
+  transform: scale(1.07);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 5px;
+    padding: 5px;
+    grid-auto-flow: dense;
+    background-color: black; 
+}
+.item1 {
+    grid-row: span 2;
+}
+/*sobre mi *//* Asegurando que la sección "Sobre mí" ocupe toda la pantalla */
+/* Sección "Sobre mí" */
+/* Sección "Sobre mí" */
+/* Sección "Sobre mí" */
+/* Sección "Sobre mí" */
+/* Sección "Sobre mí" */
+/* Estilo para la sección que ocupará toda la pantalla */
+/* Estilo para la sección que ocupará toda la pantalla */
+/* Estilo para la sección que ocupará toda la pantalla */
+/* Estilo general de la sección */
+
+        .cajas * {
+            box-sizing: border-box; 
+            margin: 0; 
+        }
+        .caja {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+            border-radius: 4px;
+            transition: transform 0.3s ease-in-out;
+            border: solid 1px rgb(255, 255, 255);
+        }  
+        .caja:hover {
+            filter: opacity(0.9);
+            transform: scale(1.4);
+        }  
+        .cajas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-auto-rows: minmax(200px, auto); /* Sin coma, correctamente formateado */
+            gap: 20px;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+        }  
+
+/* SECCION CURRICULUM */
+.curriculum{
+    background-color: #1e5e92;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* SECCION PORTFOLIO */
+/* SECCION CONTACTO */
+.contacto{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/prueba4.jpg);
+    background-color: #00000028;
+    color: #fff;
+    padding: 30px;
+    height: 100vh;  
+}
+.contacto .elparrafo {
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+    width: 400px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+.contacto .elparrafo p{
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+    width: 400px;
+    font-size: 35px;
+    float: left;
+    margin-top: 90px;
+    margin-left: 150px;
+    text-shadow: 0 0 50px #fff; 
+}
+.contacto .elparrafo h2{
+    font-size: 45px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 150px;
+    text-shadow: 0 0 5px #fafafa, 0 0 5px #817777, 0 0 5px #030202;
+    margin-top: 0px;
+    padding: 0px;
+}
+.contacto .elparrafo .email{
+    margin-top: 60px;
+    font-size: 25px;
+    margin-left: 150px;
+}
+.contacto .elparrafo .cel{
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: 150px;
+}
+/* formulario*/
+.contacto .contenido-seccion{
+    font-family: 'Kanit', sans-serif;
+    float: right;
+}
+.contacto .fila{
+    margin-right: 0px;
+    padding: 0px;
+}
+.contacto .col{
+    padding: 0px;
+    position: relative;
+    margin-left: 0px; /* Agrega esta línea para mover el formulario hacia la derecha */
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 500px;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #000102e5;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #6e00fd69;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #000000;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #06110f;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #010706;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+
+
+.video-container {
+    position: relative; /* Asegúrate de que el contenedor del video tenga posición relativa */
+}
+
+.t {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    display: flex;
+    align-items: center;
+}
+
+.t__input {
+    display: none; /* Oculta el checkbox */
+}
+
+.t__label {
+    width: 42px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #ebebeb; /* Color de fondo por defecto */
+    border-radius: 20px;
+    box-shadow: inset 0px 2px 5px #f7f6f666, inset 0px -2px 5px #d6282866;
+    cursor: pointer;
+    transition: background 0.3s; /* Transición suave para el cambio de fondo */
+}
+
+.t__label::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(180deg, #e1e6b8, #e7e7d4); /* Color del círculo */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #ffffff;
+    transition: left 0.3s; /* Transición suave para el movimiento del círculo */
+}
+
+.t__input:checked + .t__label {
+    background: #242424; /* Color de fondo cuando está activado */
+}
+
+.t__input:checked + .t__label::after {
+    left: 24px; /* Mueve el círculo a la derecha */
+    background: linear-gradient(180deg, #777, #3a3a3a); /* Color del círculo cuando está activado */
+}
+
+.t__icon {
+    display: none; /* Oculta los íconos por defecto */
+}
+
+.t__icon--sun {
+    display: block; /* Muestra el ícono de sol */
+}
+
+.t__input:checked + .t__label .t__icon--sun {
+    display: none; /* Oculta el ícono de sol cuando está activado */
+}
+
+.t__input:checked + .t__label .t__icon--moon {
+    display: block; /* Muestra el ícono de luna cuando está activado */
+}
